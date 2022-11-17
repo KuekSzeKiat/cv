@@ -1,0 +1,71 @@
+/*
+h1, h2, h3, table, p, ol, hr {
+    grid-column: 2/-1;
+}
+*/
+
+.left {
+    float: left;
+}
+
+.sect {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /*Extend element height when content overflow*/
+    padding-top: 60px; /* to prevent content being blocked by navbar*/
+}
+
+.heading {
+    background-color: lightskyblue;
+    border: 2px solid black;
+    min-height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justified{
+    text-align: justify
+}
+
+.logo {
+    width: 70%;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.sect{
+    scroll-snap-align: start;
+}
+
+.up-button{
+    width:30%
+}
+
+.upward-button{
+    position:fixed;
+    bottom:10%;
+    right:0;
+    width:15%;
+}
+
+
+#projects {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 25%;
+    }
+}
